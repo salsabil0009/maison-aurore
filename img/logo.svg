@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190" height="48" viewBox="0 0 190 48">
+  <circle cx="24" cy="24" r="22" fill="#C8643B"/>
+  <path d="M13 20h18v8a7 7 0 0 1-7 7h-4a7 7 0 0 1-7-7z" fill="#FAF5EE"/>
+  <path d="M31 22h2.5a3.5 3.5 0 0 1 0 7H31" fill="none" stroke="#FAF5EE" stroke-width="2"/>
+  <path d="M18 16c0-3 3-3 3-6M24 16c0-3 3-3 3-6" fill="none" stroke="#FAF5EE" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="56" y="32" font-family="Playfair Display, Georgia, serif" font-size="25" font-weight="700" fill="#FAF5EE">Aurore</text>
+</svg>
