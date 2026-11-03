@@ -25,7 +25,7 @@ header {
 
 .menu {
     list-style-type: none;
-    margin-top: 26px;
+    margin-top: 22px;
     margin-right: 80px;
     display: flex;
     gap: 20px;
@@ -38,6 +38,12 @@ header {
     font-weight: bold;
     padding: 10px 15px;
     transition: background-color 0.3s, color 0.3s;
+    
+}
+
+.menu a:hover {
+    color: #d7b18a;
+    transition: 0.3s;
 }
 
 #z1{
@@ -141,3 +147,54 @@ h2 {
     padding-bottom: 40px;
 }
 
+footer {
+    background-color: #4a2b22;
+    color: white;
+    padding: 40px 10%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 180px;
+}
+
+.footer-col img {
+    width: 90px;
+    height: auto;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #f0d8c0;
+}
+
+.footer-col p,
+.footer-col a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-col a:hover {
+    color: #d7b18a;
+    transition: 0.3s;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 0.9rem;
+}
