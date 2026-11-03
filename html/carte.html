@@ -15,7 +15,7 @@
         </div>
         <div class="header-content"></div>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="carte.html">La Carte</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
@@ -25,9 +25,110 @@
     </header>
 
     <main>
-        
+        <section id="bandeau">
+            <h1 class="titre1">La Carte</h1>
+            <p class="titre2">Découvrez une sélection de cafés, thés et douceurs artisanales préparés avec passion.<br>Prenez le temps de savourer l'instant chez Café Aurore.</p>
+        </section>
+        <section class="menu">
+
+    <!-- Radios -->
+    <input type="radio" name="onglet" id="entrees" checked>
+    <input type="radio" name="onglet" id="plats">
+    <input type="radio" name="onglet" id="desserts">
+    <input type="radio" name="onglet" id="boissons">
+
+    <div class="tabs">
+        <label for="entrees">Entrées</label>
+        <label for="plats">Plats</label>
+        <label for="desserts">Desserts</label>
+        <label for="boissons">Boissons</label>
+    </div>
+
+    <div class="contenus">
+
+        <div class="tab-content content-entrees">
+            <h2>Entrées</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <img src="img/entree1.jpg" alt="">
+                    <div>
+                        <h3>Salade fraîcheur</h3>
+                        <p>Légumes de saison</p>
+                    </div>
+                    <span>7 €</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/entree2.jpg" alt="">
+                    <div>
+                        <h3>Bruschetta</h3>
+                        <p>Tomates et basilic</p>
+                    </div>
+                    <span>8 €</span>
+                </article>
+            </div>
+        </div>
+
+        <div class="tab-content content-plats">
+            <h2>Plats</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <img src="img/plat1.jpg" alt="">
+                    <div>
+                        <h3>Croque Aurore</h3>
+                        <p>Jambon, comté, béchamel</p>
+                    </div>
+                    <span>9,50 €</span>
+                </article>
+
+                <article class="card">
+                    <img src="img/plat2.jpg" alt="">
+                    <div>
+                        <h3>Quiche du jour</h3>
+                        <p>Légumes de saison</p>
+                    </div>
+                    <span>8,50 €</span>
+                </article>
+            </div>
+        </div>
+
+        <div class="tab-content content-desserts">
+            <h2>Desserts</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <img src="img/dessert1.jpg" alt="">
+                    <div>
+                        <h3>Tiramisu</h3>
+                        <p>Recette maison</p>
+                    </div>
+                    <span>5 €</span>
+                </article>
+            </div>
+        </div>
+
+        <div class="tab-content content-boissons">
+            <h2>Boissons</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <img src="img/cafe.jpg" alt="">
+                    <div>
+                        <h3>Cappuccino</h3>
+                        <p>Mousse de lait onctueuse</p>
+                    </div>
+                    <span>4,50 €</span>
+                </article>
+            </div>
+        </div>
+
+    </div>
+</section>
     </main>
-       <footer>
+
+    <footer>
         <div class="footer-container">
 
             <div class="footer-col">
@@ -37,10 +138,10 @@
 
             <div class="footer-col">
                 <h4>Navigation</h4>
-                <a href="#">Accueil</a>
-                <a href="#">Menu</a>
-                <a href="#">À propos</a>
-                <a href="#">Contact</a>
+                <a href="index.html">Accueil</a>
+                <a href="carte.html">La Carte</a>
+                <a href="galerie.html">Galerie</a>
+                <a href="contact.html">Contact</a>
             </div>
 
             <div class="footer-col">
@@ -60,6 +161,6 @@
         <div class="footer-bottom">
             © 2024 Café Aurore. Tous droits réservés.
         </div>
-</footer>
+    </footer>
 </body>
 </html>

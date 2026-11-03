@@ -25,11 +25,10 @@ header {
 
 .menu {
     list-style-type: none;
-    margin-top: 22px;
+    margin-top: 15px;
     margin-right: 80px;
     display: flex;
     gap: 20px;
-
 }
 
 .menu li a {
@@ -38,7 +37,7 @@ header {
     font-weight: bold;
     padding: 10px 15px;
     transition: background-color 0.3s, color 0.3s;
-    
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .menu a:hover {
@@ -148,7 +147,7 @@ h2 {
 }
 
 footer {
-    background-color: #4a2b22;
+    background-color: #3E2723;
     color: white;
     padding: 40px 10%;
 }
@@ -198,3 +197,120 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.2);
     font-size: 0.9rem;
 }
+
+#bandeau {
+    background-image: url('/img/karsten-winegeart-l24eJZ9cIQk-unsplash.jpg'); width: 100%; height: 280px;
+
+}
+
+.titre1{
+    margin-top: 0;
+    padding-top: 80px;
+    padding-left: 50px;
+    color: white;
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.titre2{
+    margin-top: 0;
+    padding-top: 10px;
+    padding-left: 50px;
+    color: white;
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Cache les radios */
+input[type="radio"]{
+    display:none;
+}
+
+.tabs{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin:40px 0;
+}
+
+.tabs label{
+    width:240px;
+    height:64px;
+    background:#d8cbb8;
+    color:#4a2c2a;
+    font-weight:600;
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:.3s;
+}
+
+.tabs label:hover{
+    background:#c9b79c;
+}
+
+
+#entrees:checked ~ .tabs label[for="entrees"],
+#plats:checked ~ .tabs label[for="plats"],
+#desserts:checked ~ .tabs label[for="desserts"],
+#boissons:checked ~ .tabs label[for="boissons"]{
+    background:#c87040;
+    color:white;
+}
+
+.tab-content{
+    display:none;
+    animation:fade .3s ease;
+}
+
+/* Affiche uniquement le contenu sélectionné */
+
+#entrees:checked ~ .contenus .content-entrees{
+    display:block;
+}
+
+#plats:checked ~ .contenus .content-plats{
+    display:block;
+}
+
+#desserts:checked ~ .contenus .content-desserts{
+    display:block;
+}
+
+#boissons:checked ~ .contenus .content-boissons{
+    display:block;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.card{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px;
+    border:1px solid #ddd;
+    background:white;
+}
+
+.card img{
+    width:120px;
+    height:90px;
+    object-fit:cover;
+}
+
+.card div{
+    flex:1;
+}
+
+.card span{
+    color:#c87040;
+    font-weight:bold;
+}
+
